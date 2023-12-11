@@ -61,5 +61,6 @@ Step-by-step instructions on installing the project.
 
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
 Author: Dian Jeruto
 
