@@ -1,21 +1,64 @@
-phase-3-toy-problem
+# phase-3-toy-problem
 
-Challenge 1 - Time Converter:
-The program works to Convert a 12-hour time like "8:30 am" or "8:30 pm" to 24-hour time (like "0830" or "2030")! It defines a function, which will be given an hour (always in the range of 1 to 12, inclusive), a minute (always in the range of 0 to 59, inclusive), and a period (either "am" or "pm") as input. The program returns a four-digit string that encodes that time in 24-hour time.
+This repository contains solutions for three coding challenges. These challenges cover various programming concepts and are designed to test your problem-solving skills. Below, you'll find a description of each challenge along with usage examples for the provided functions.
 
-Challenge 2 - Two Positive Numbers:
-This program defines a function that checks whether exactly two out of three given numbers are positive. It iterates through the provided numbers and counts the positive ones. If exactly two numbers are positive, the function returns True; otherwise, it returns False. The code demonstrates the function by accepting 3 user input numbers and printing the result.
+## challenge 1: Converting 12-hour time to 24-hour time
 
-Challenge 3 - Consonant Value:
-This is a program that defines a function that takes a string and removes the vowels (a, e, i, o, u) and then splits the string to create groups of consonant sequences. It calculates the value of each group by summing the position of each character in the alphabet plus one. The function returns the maximum value among these calculated values for each group of consonants. The code demonstrates the function by accepting a string into the function and printing the result.
+### Description
+This challenge involves converting a 12-hour time (e.g., "8:30 am" or "8:30 pm") to 24-hour time (e.g., "0830" or "2030").
 
-Project Setup
-Clone the repository
-git clone git@github.com:Dianjeruto/phase-3-toy-problem.git
-Install required dependencies
-cd into the project directory
-Authors & License Authored by:
-Dian Jeruto
+### Function
+The function `convert_to_24_hour(hour, minute, period)` takes three inputs: `hour` (in the range of 1 to 12), `minute` (in the range of 0 to 59), and `period` ("am" or "pm"). It returns a four-digit string representing the time in 24-hour format.
 
-Licensed under the MIT License - see the LICENSE file for details.
+### Example
+
+time_1 = convert_to_24_hour(8, 30, "am")
+print(time_1)  # Output: "0830"
+
+time_2 = convert_to_24_hour(8, 30, "pm")
+print(time_2)  # Output: "2030"
+
+
+## Challenge 2: Two numbers are positive
+### Description
+
+This challenge involves determining whether exactly two out of three given integers are positive numbers.
+Function
+
+The function exactly_two_positive(a, b, c) takes three integer inputs: a, b, and c. It returns True if exactly two of the three integers are positive numbers, and False otherwise.
+
+### Example
+result_1 = exactly_two_positive(2, 4, -3)
+print(result_1)  # Output: True
+
+result_2 = exactly_two_positive(-4, 6, 8)
+print(result_2)  # Output: True
+
+result_3 = exactly_two_positive(4, -6, 9)
+print(result_3)  # Output: True
+
+
+## Challenge 3: Consonant value
+### Description
+
+This challenge involves finding the highest value of consonant substrings in a given lowercase string.
+Function
+
+The function solve(s) takes a single input: a lowercase string containing only alphabetic characters (no spaces). It returns the highest value of consonant substrings, where consonants are any letters except "aeiou".
+### Example
+value_1 = solve("zodiacs")
+print(value_1)  # Output: 26
+
+value_2 = solve("strength")
+print(value_2)  # Output: 57
+
+### Installation
+
+Step-by-step instructions on installing the project.
+
+1. Clone the repository: `git clone git@github.com:Dianjeruto/phase-3-toy-problem.git`
+2. Change into the project directory: `cd phase-3-toy-problem`
+
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
