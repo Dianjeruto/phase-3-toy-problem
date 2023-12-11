@@ -12,6 +12,7 @@ This is a program that defines a function that takes a string and removes the vo
 Project Setup
 Clone the repository
 git clone git@github.com:Dianjeruto/phase-3-toy-problem.git
+
 Install required dependencies
 cd into the project directory
 Authors & License Authored by:
